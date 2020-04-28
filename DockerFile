@@ -6,4 +6,4 @@ RUN echo "root:root"|chpasswd
 RUN /etc/init.d/postgresql start
 COPY example-jpa/build/libs/example-jpa-0.1.0-SNAPSHOT.jar /root
 RUN apt-get install openjdk-8-jre
-RUN java -jar root/example-jpa-0.1.0-SNAPSHOT.jar
+CMD java -jar root/example-jpa-0.1.0-SNAPSHOT.jar
